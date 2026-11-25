@@ -4,7 +4,7 @@ import Aside from "./Aside.jsx";
 
 const hasText = (value) => typeof value === "string" && value.trim() !== "";
 
-export default function Main() {
+export default function Main({favorites, toggleFavorite}) {
   const validCars = cars.filter(
     (car) => hasText(car.brand) && hasText(car.model),
   );
@@ -31,7 +31,12 @@ export default function Main() {
 
         <div className="car-grid">
           {visibleCars.map((car) => (
-            <CarCard key={car.id} car={car} />
+            <CarCard 
+            key={car.id} 
+            car={car}
+            isFavorite={favorites.includes(car.id)}
+            inToggleFavorite={() => toggleFavorite(car.id)}
+            />
           ))}
         </div>
       </section>
