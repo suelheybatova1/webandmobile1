@@ -1,0 +1,25 @@
+// Turbo.az listing photographs (live URLs, checked November 18, 2026).
+// Missing attributes are intentional modifications for the React seminar.
+// Third-party image links may expire or disallow hotlinking.
+export const cars = [
+  {"id": 1, "brand": "Hyundai", "model": "Santa Fe", "year": 2015, "price": 22000, "mileage": 220000, "engine": "2.4 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F11%2F17%2F15%2F18%2F51%2Ff833644e-80a0-4d4e-8c40-9f956ed09d4f%2F84339_l66DVtGTSPUdgtnt0IUd2w.jpg", "isFeatured": true},
+  {"id": 2, "brand": "Jeep", "model": "Wrangler", "year": 2023, "price": 61000, "mileage": 86000, "engine": "2.0 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F11%2F14%2F17%2F41%2F21%2F4a57b345-f8a3-4d36-87ce-5958b71ba610%2F67477_x9-bpWF0j2ONKKubamD9KA.jpg"},
+  {"id": 3, "brand": "Bentley", "model": "Continental GT", "year": 2019, "price": 226100, "mileage": 43000, "engine": "6.0 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F09%2F01%2F16%2F37%2F36%2Fad971908-413f-4ff0-95fb-cbd87dad5063%2F72311_0bkULvrZWN0k20Cv6z-D0g.jpg", "isFeatured": true},
+  {"id": 4, "brand": "Mercedes", "model": "S 63 AMG", "year": 2023, "price": 285600, "mileage": 47000, "engine": "4.0 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F09%2F13%2F18%2F40%2F18%2F642f31e2-301d-4d68-9695-e980992affa1%2F63786_3BNPPkmyrhc-hpn0x1XUVA.jpg", "isFeatured": true},
+  {"id": 5, "brand": "Nissan", "model": "Patrol", "year": 2026, "price": 222700, "mileage": 0, "engine": "3.5 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F10%2F29%2F14%2F11%2F19%2Fd7567e86-b521-44f5-b846-f8ef578c67a1%2F18681_YuSTR61SIGj76kSeJyKYIw.jpg"},
+  {"id": 6, "model": "Range Rover", "year": 2015, "price": 55500, "mileage": 163291, "engine": "3.0 L"},
+  {"id": 7, "brand": "Nissan", "year": 2023, "price": 106250, "mileage": 83000, "engine": "4.0 L"},
+  {"id": 8, "brand": "Mercedes", "model": "GLE 53 AMG 4MATIC+ Coupe", "year": 2021, "mileage": 30000, "engine": "3.0 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F11%2F10%2F13%2F39%2F51%2F4df0c997-0dbc-41d7-bfbe-e1f8eb8a9582%2F39486_3_V4b90keZOwXypvcuuHlQ.jpg", "isFeatured": true},
+  {"id": 9, "brand": "Porsche", "model": "Taycan Turbo S", "year": 2020, "price": 92650, "mileage": 58000, "engine": "93.4 kWh", "image": null},
+  {"id": 10, "brand": "BMW", "model": "M5", "year": 2019, "price": 113050, "engine": "4.4 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F06%2F21%2F27%2F54%2Fecf7e08a-2fa4-4024-a359-78bd045833f8%2F83413_6IWLkTsJDoYq5JvVIa0BaA.jpg", "isFeatured": true},
+  {"id": 11, "brand": "Chevrolet", "model": "Cruze", "year": 2013, "price": 12400, "mileage": 235000, "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F11%2F17%2F16%2F36%2F08%2Fc71e8a35-685a-4fe9-9952-3b416d7d28ce%2F61378_Tex27ma4eq-BtofD7CTt5g.jpg"},
+  {"id": 12, "brand": "Changan", "model": "F70 (Hunter)", "year": 2026, "mileage": 0, "engine": "1.9 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2025%2F05%2F25%2F00%2F30%2F23%2F13c1e274-a0b9-430a-895b-96346f87922f%2F4513_SdFmiiX51JZHxZnCDO0xMg.jpg"},
+  {"id": 13, "brand": "", "model": "Eado", "year": 2026, "price": 29900, "mileage": 0, "engine": "1.5 L"},
+  {"id": 14, "brand": "Peugeot", "year": 2013, "price": 13500, "mileage": 306000, "engine": "1.6 L"},
+  {"id": 15, "brand": "Changan", "model": "Qiyuan Q07", "price": 49500, "mileage": 0, "engine": "1.5 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F10%2F28%2F17%2F49%2F06%2Facb9351e-16fa-4b84-9cbf-6ecf194d2700%2F90185_HxsWu4VLmfgp6Lhy9kKCag.jpg"},
+  {"id": 16, "brand": "Geely", "model": "Galaxy M9", "year": 2026, "price": 56800, "mileage": 0, "engine": "1.5 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F09%2F05%2F20%2F09%2F47%2F35a3baf7-2708-4246-9354-34a6d9dfc706%2F63791_fowE6hASyFgMds62O2cwXw.jpg"},
+  {"id": 17, "brand": "Ford", "model": "Ranger", "year": 2018, "price": 39900, "mileage": 248000, "engine": "2.2 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F11%2F03%2F20%2F29%2F09%2F199c4e29-407e-48e1-b5ed-5866106f7b1c%2F67452_af6QUyY9UgnEDUYZIAolgw.jpg"},
+  {"id": 18, "brand": "Mercedes", "model": "E 250", "year": 2015, "price": 26500, "mileage": 187300, "engine": "2.1 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F09%2F21%2F22%2F21%2F55%2F589247b5-bb73-45ec-b0a4-a112e14424e7%2F72887_f1r5E8CokJqb9fiwPhLMEw.jpg"},
+  {"id": 19, "brand": "Hyundai", "model": "Santa Fe", "year": 2023, "price": 59800, "mileage": 36900, "engine": "1.6 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F11%2F14%2F22%2F26%2F59%2F9257516e-cfc2-4bd4-80d6-e3b89a951a1c%2F66598_4bQAySX3_28gxiX9--F3RQ.jpg", "isFeatured": true},
+  {"id": 20, "brand": "BMW", "model": "X7", "year": 2024, "price": 186000, "mileage": 68000, "engine": "3.0 L", "image": "https://turbo.azstatic.com/uploads/f460x343/2026%2F11%2F15%2F22%2F20%2F59%2F9ebc64e9-f867-4c31-aaa3-e63be591abd4%2F2391_P68ba1D9FQJ4b9aGjrXtXg.jpg", "isFeatured": true}
+];

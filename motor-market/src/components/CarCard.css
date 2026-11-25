@@ -1,0 +1,66 @@
+.car-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.car-card:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgb(22 28 45 / 13%); }
+.car-card__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #e8eaed; }
+.car-card__media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 250ms ease; }
+.car-card:hover .car-card__media img { transform: scale(1.035); }
+
+.image-placeholder {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  color: #777f8c;
+  background: linear-gradient(135deg, #eef0f3, #dde0e5);
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.image-placeholder span { color: #a4aab3; font-size: 2rem; line-height: 1; }
+
+.featured-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: white;
+  background: var(--primary);
+  box-shadow: 0 4px 12px rgb(72 0 3 / 24%);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.car-card__body { padding: 18px; }
+.car-card__body h2 { min-height: 2.7em; margin: 0; overflow-wrap: anywhere; font-size: 1.02rem; line-height: 1.35; letter-spacing: -0.015em; }
+.car-price { margin: 9px 0 16px; color: var(--primary); font-size: 1.2rem; font-weight: 850; }
+
+.car-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
+  margin: 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.car-details div { min-width: 0; }
+.car-details dt { color: var(--muted); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
+.car-details dd { margin: 2px 0 0; overflow-wrap: anywhere; font-size: 0.86rem; font-weight: 700; }
+
+@media (prefers-reduced-motion: reduce) {
+  .car-card, .car-card__media img { transition: none; }
+}
