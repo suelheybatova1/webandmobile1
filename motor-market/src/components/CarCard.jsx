@@ -4,7 +4,7 @@ const hasText = (value) => typeof value === "string" && value.trim() !== "";
 const hasValue = (value) => value !== null && value !== undefined;
 const numberFormatter = new Intl.NumberFormat("en-US");
 
-export default function CarCard({car,isFavotite,onToggleFavorite}) {
+export default function CarCard({car,isFavorite,onToggleFavorite}) {
   const {brand,model,year,price,mileage,fuel,engine,image,isFeatured,
   } = car;
 
@@ -49,11 +49,11 @@ export default function CarCard({car,isFavotite,onToggleFavorite}) {
           )}
         </dl>
         <button
-        className={`favorite-btn ${isFavotite ? "active" : ""}`}
+        className={`favorite-btn ${isFavorite ? "active" : ""}`}
         onClick={onToggleFavorite}
-        aria-pressed={isFavotite}
+        aria-pressed={isFavorite}
         >
-          {isFavotite ? "♥" : "♡"}
+          {isFavorite ? "♥" : "♡"}
         </button>
       </div>
     </article>

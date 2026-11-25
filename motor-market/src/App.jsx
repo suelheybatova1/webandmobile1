@@ -12,7 +12,7 @@ export default function App() {
   const [filter,setFilter] = useState("all");
 
   function toggleFavorite(id){
-    if( favorites.includes(id)){
+    if(favorites.includes(id)){
       setFavotes(favorites.filter(item => item != id));
     }
     else{

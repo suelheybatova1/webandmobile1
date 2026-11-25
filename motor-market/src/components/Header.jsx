@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({favoriteCount}) {
   return (
     <header className="site-header">
       <div className="container header-content">

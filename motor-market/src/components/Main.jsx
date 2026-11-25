@@ -8,13 +8,7 @@ export default function Main({favorites, toggleFavorite}) {
   const validCars = cars.filter(
     (car) => hasText(car.brand) && hasText(car.model),
   );
-
-  // Part E filtering practice (use one of these instead of validCars below):
-  // Filter A: validCars.filter((car) => car.price != null && car.price < 30000);
-  // Filter B: validCars.filter((car) => car.year != null && car.year >= 2020);
-  // Filter C: validCars.filter((car) => car.isFeatured === true);
-  // Filter D: validCars.filter((car) => car.mileage != null && car.mileage < 60000);
-  const visibleCars = validCars;
+  const visibleCars = cars;
 
   return (
     <main className="container page-layout">
@@ -31,12 +25,12 @@ export default function Main({favorites, toggleFavorite}) {
 
         <div className="car-grid">
           {visibleCars.map((car) => (
-            <CarCard 
-            key={car.id} 
+            <CarCard
+            key={car.id}
             car={car}
             isFavorite={favorites.includes(car.id)}
-            inToggleFavorite={() => toggleFavorite(car.id)}
-            />
+            onToggleFavorite={() => toggleFavorite(car.id)}
+/>
           ))}
         </div>
       </section>
