@@ -4,17 +4,8 @@ const hasText = (value) => typeof value === "string" && value.trim() !== "";
 const hasValue = (value) => value !== null && value !== undefined;
 const numberFormatter = new Intl.NumberFormat("en-US");
 
-export default function CarCard({ car }) {
-  const {
-    brand,
-    model,
-    year,
-    price,
-    mileage,
-    fuel,
-    engine,
-    image,
-    isFeatured,
+export default function CarCard({car,isFavotite,onToggleFavorite}) {
+  const {brand,model,year,price,mileage,fuel,engine,image,isFeatured,
   } = car;
 
   if (!hasText(brand) || !hasText(model)) {
@@ -57,6 +48,13 @@ export default function CarCard({ car }) {
             <div><dt>Engine</dt><dd>{engine}</dd></div>
           )}
         </dl>
+        <button
+        className={`favorite-btn ${isFavotite ? "active" : ""}`}
+        onClick={onToggleFavorite}
+        aria-pressed={isFavotite}
+        >
+          {isFavotite ? "♥" : "♡"}
+        </button>
       </div>
     </article>
   );

@@ -64,3 +64,26 @@
 @media (prefers-reduced-motion: reduce) {
   .car-card, .car-card__media img { transition: none; }
 }
+
+
+.favorite-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.favorite-btn:hover {
+  opacity: 0.8;
+}
+
+.favorite-btn.active {
+  background: var(--primary);
+  color: white;
+}
